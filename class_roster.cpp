@@ -15,7 +15,7 @@ int main()
 	// a typical "three in one": variable is declared, defined and initiated. doesn't leave place for uninitiated variable. 
 	double average_age = 23.3;
 
-	cout << "Please enter student data\n";
+	cout << "Please enter student data:\n";
 
 	string first_name;	
 	cout << "Please enter first name:\n";
@@ -23,19 +23,14 @@ int main()
 	// notice syntax of collecting user input, compare to supplying user output
 	cin >> first_name;
 
-
+	string last_name;
 	cout << "Please enter last name:\n";
+	cin >> last_name;
 
-	// please collect new student's last name is variable last_name
-	/*
-		(1) pls remove this block comment and enter required code instead
-	*/
-
+	int age;
 	cout << "Please enter age:\n";	
-	// please collect new student's age in variable age
-	/*
-		(2) pls remove this block comment and enter required code instead
-	*/	
+	cin >> age;
+	
 
 	// notice cin >> is equally succesfull collecting integer or string. such behavior is called polymorphysm.	int age;	
 
@@ -56,8 +51,6 @@ int main()
 	cout << first_name +  " " + last_name + " of age: " << age << "\n";
 	cout << "New class size is " << class_size << "\n";
 
-	// mixing new age with existing class average.
-	// notice int age seemlessly entering calculation which otherwise is double.
 	// this is example of implicit cast. 
 	// this is widening, safe conversion, since int has clear interpretation as float and no byte clipping required either.
 
